@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="w3.css">
+<style>
+	body{
+            margin: 0;
+            width: 100%; 
+	        max-width: 100%;
+            margin-right: auto;
+            margin-left: auto; 
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: center
+        }
+        
+        .logobar {
+            overflow: hidden;
+            background-color: rgba(3,5,30,255);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: inline
+        }
+    
+        .logobar h2{
+            color: white;
+            position: center;
+            text-align: left;
+            padding-left: 5%;
+            font-size: 150%;
+        }
+
+        .logobar img{
+            padding-right: 1%;
+            width:5%;
+            height:5%;
+            padding-left: 70%;
+            margin: auto;
+        }
+
+        .navbar {
+          overflow: hidden;
+          background-color: rgba(3,5,30,255);
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          float: center;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+
+        .navbar ul{
+            text-align: center;
+            width: 100%;
+            display: block
+        }
+
+        .navbar a {
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 100%;
+        }
+        
+        .navbar a:hover {
+          background: #ddd;
+          color: black;
+        }
+        
+        .main {
+          padding: 16px;
+          margin-bottom: 30px;
+          height: 1500px; /* Used in this example to enable scrolling */
+        }
+</style>
+<body >
+	<div class="logobar">
+    <h2 >Sharp Shooters <img src="images/Logo.PNG"> <a href='login.html' style= "font-size: 70%; background-color: rgba(3,15,30,255); color: white"> Log Out</a>  </h2> 
+    </div>
+    <div class="navbar">
+    <ul>
+      <li> <a href="inicioEntrenamiento.html"  >Comenzar</a> </li>
+				<li> <a href="entrenamientos.html" >Entrenamientos</a> </li>
+				<li><a href="amigos.html" >Amigos</a> </li>
+				<li><a href="leaderboard.html" >Leaderboard</a> </li>
+				<li><a href="perfil.html" >Perfil</a> </li>
+    </ul>
+  </div>
+  <div class= "center" style="padding: 20px">
+	<br>
+	<br>
+		<H1 style= "text-align: center;"><STRONG><font size="7" >MIS ENTRENAMIENTOS</font></STRONG></H1>
+		<br></br>
+
+		<div style= "text-align: center;">
+			<STRONG><div class="tabContainer" >
+			<div class="buttonContainer" >
+				<button  onclick="showPanel(0,'#e3e3e3')">Entrenamiento 1</button>
+				<button onclick="showPanel(1,'#fff')">Entrenamiento 2</button>
+				<button onclick="showPanel(2,'#e3e3e3')">Entrenamiento 3</button>
+				<button onclick="showPanel(3,'#fff')">Entrenamiento 4</button>
+				<button  onclick="showPanel(4,'#e3e3e3')">Entrenamiento 5</button>
+			</div>
+			<br></br>
+			<div class="tabPanel"> DÍA <br> 20 Septiembre 2021<br><br>TIEMPO DE ENTRENAMIENTO <br> 1 hora y 30 minutos<br><br>NÚMERO DE TIROS <br> 50<br><br>% ACIERTO DE TIROS LIBRES <br> 75%<br><br>% ACIERTO TIROS DE 2 <br> 25%<br><br>% ACIERTOS TIROS DE 3 <br> 18%<br><br>% ACIERTO POR ZONA:<br><br>
+			<IMG SRC='images/Entrena1_1.png' ><br><br>&nbsp;DISTRIBUCIÓN DE TIROS:<br><br>
+			<IMG SRC='images/Entrena1_2.png' >
+			</div>
+			
+			<div class="tabPanel">DÍA <br> 29 Septiembre 2021<br><br>TIEMPO DE ENTRENAMIENTO <br> 2 horas<br><br>NÚMERO DE TIROS <br> 75<br><br>% ACIERTO DE TIROS LIBRES <br> 80%<br><br>% ACIERTO TIROS DE 2 <br> 55%<br><br>% ACIERTOS TIROS DE 3 <br> 40%<br><br>% ACIERTO POR ZONA:<br><br>
+			<IMG SRC='images/Entrena2_1.png' ><br><br>&nbsp;DISTRIBUCIÓN DE TIROS:<br><br>
+			<IMG SRC='images/Entrena2_2.png' >
+			</div>
+			
+			<div class="tabPanel">DÍA <br> 15 Octubre 2021<br><br>TIEMPO DE ENTRENAMIENTO <br> 2 horas y 40 minutos<br><br>NÚMERO DE TIROS <br> 158<br><br>% ACIERTO DE TIROS LIBRES <br> 82%<br><br>% ACIERTO TIROS DE 2 <br> 44%<br><br>% ACIERTOS TIROS DE 3 <br> 30%<br><br>% ACIERTO POR ZONA:<br><br>
+			<IMG SRC='images/Entrena3_1.png' ><br><br>&nbsp;DISTRIBUCIÓN DE TIROS:<br><br>
+			<IMG SRC='images/Entrena3_2.png' >
+			</div>
+			
+			<div class="tabPanel">DÍA <br> 10 Noviembre 2021<br><br>TIEMPO DE ENTRENAMIENTO <br> 45 minutos<br><br>NÚMERO DE TIROS <br> 35<br><br>% ACIERTO DE TIROS LIBRES <br> 70%<br><br>% ACIERTO TIROS DE 2 <br> 40%<br><br>% ACIERTOS TIROS DE 3 <br> 22%<br><br>% ACIERTO POR ZONA:<br><br>
+			<IMG SRC='images/Entrena4_1.png' ><br><br>&nbsp;DISTRIBUCIÓN DE TIROS:<br><br>
+			<IMG SRC='images/Entrena4_2.png' >
+			</div>
+			
+			<div class="tabPanel">DÍA <br>  8 Diciembre 2021<br><br>TIEMPO DE ENTRENAMIENTO <br> 2 horas y 45 minutos<br><br>NÚMERO DE TIROS <br> 200<br><br>% ACIERTO DE TIROS LIBRES <br> 90%<br><br>% ACIERTO TIROS DE 2 <br> 35%<br><br>% ACIERTOS TIROS DE 3 <br> 40%<br><br>% ACIERTO POR ZONA:<br><br>
+			<IMG SRC='images/Entrena5_1.png' ><br><br>&nbsp; <u>  DISTRIBUCIÓN DE TIROS </u><br><br>
+			<IMG SRC='images/Entrena5_2.png' >
+			</div>
+
+
+		<script src="estadisticas.js"></script>
+		</div></STRONG>
+	</div>
+	</div>
+	<br>
+	<br>
+</body>
+ <br>
+   <br>
+
+</html>

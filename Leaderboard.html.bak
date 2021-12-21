@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="w3.css">
+<style>
+	body{
+            margin: 0;
+            width: 100%; 
+	        max-width: 100%;
+            margin-right: auto;
+            margin-left: auto; 
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            position: center
+        }
+        
+        .logobar {
+            overflow: hidden;
+            background-color: rgba(3,5,30,255);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: inline
+        }
+    
+        .logobar h2{
+            color: white;
+            position: center;
+            text-align: left;
+            padding-left: 5%;
+            font-size: 150%;
+        }
+
+        .logobar img{
+            padding-right: 1%;
+            width:5%;
+            height:5%;
+            padding-left: 70%;
+            margin: auto;
+        }
+
+        .navbar {
+          overflow: hidden;
+          background-color: rgba(3,5,30,255);
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          float: center;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+
+        .navbar ul{
+            text-align: center;
+            width: 100%;
+            display: block
+        }
+
+        .navbar a {
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 100%;
+        }
+        
+        .navbar a:hover {
+          background: #ddd;
+          color: black;
+        }
+        
+        .main {
+          padding: 16px;
+          margin-bottom: 30px;
+          height: 1500px; /* Used in this example to enable scrolling */
+        }
+</style>
+<body >
+	<div class="logobar">
+        <h2 >Sharp Shooters <img src="images/Logo.PNG">  </h2>
+    </div>
+    <div class="navbar">
+    <ul>
+        <li> <a href="#home"  >Entrenamiento</a> </li>
+        <li> <a href="entrenamientos.html" >Estadísticas</a> </li>
+        <li><a href="#contact" >Amigos</a> </li>
+        <li><a href="#contact" >Leaderboard</a> </li>
+        <li><a href="perfil.html" >Perfil</a> </li>
+    </ul>
+  </div>
+  <div class= "center" style="padding: 20px">
+	<br>
+	<br>
+		<H1 style= "text-align: center;"><STRONG><font size="7" >LEADERBOARD</font></STRONG></H1>
+		<H1 style= "text-align: center;"><STRONG><font size="5" >¡Compárate con tus amigos!</font></STRONG></H1>
+		<br></br>
+
+		<div style= "text-align: center;">
+			<STRONG><div class="tabContainer" >
+			<div class="buttonContainer">
+				<button  onclick="showPanel(0,'#fff')">% Tiros libres</button>
+				<button onclick="showPanel(1,'#fff')">% Tiros de 2</button>
+				<button onclick="showPanel(2,'#fff')">% Tiros de 3</button>
+				<button onclick="showPanel(3,'#fff')">Horas de entrenamiento</button>
+			</div>
+			<br></br>
+			<div class="tabPanel"> <TABLE class="w3-table w3-center" style="border-collapse:separate;margin:10px;padding:10px" BORDER=1>
+			<TR class="w3-grey"><TD><CENTER>Nombre</CENTER></TD><TD><CENTER>Usuario</CENTER></TD><TD><CENTER>% Tiros libres</CENTER></TD</TR>
+			<TR><TD><CENTER>Kevin Durant</CENTER></TD><TD><CENTER>KD35</CENTER></TD><TD><CENTER>90%</CENTER></TD></TR>
+			<TR><TD><CENTER>Stephen Curry</CENTER></TD><TD><CENTER>SCurry30</CENTER></TD><TD><CENTER>89%</CENTER></TD></TR>
+			<TR><TD><CENTER>Demar Derozan</CENTER></TD><TD><CENTER>DemarDero</CENTER></TD><TD><CENTER>82%</CENTER></TD></TR>
+			<TR><TD><CENTER>Lebron James</CENTER></TD><TD><CENTER>KingJames</CENTER></TD><TD><CENTER>78%</CENTER></TD></TR>
+			<TR><TD><CENTER>Lamelo Ball</CENTER></TD><TD><CENTER>Ball2</CENTER></TD><TD><CENTER>70%</CENTER></TD></TR>
+			<TR><TD><CENTER>Giannis Antetokounmpo</CENTER></TD><TD><CENTER>Anteto34</CENTER></TD><TD><CENTER>55%</CENTER></TD></TR>
+			</TABLE>
+			</div>
+			
+			<div class="tabPanel"> <TABLE class="w3-table w3-center" style="border-collapse:separate;margin:10px;padding:10px" BORDER=1>
+			<TR class="w3-grey"><TD><CENTER>Nombre</CENTER></TD><TD><CENTER>Usuario</CENTER></TD><TD><CENTER>% Tiros de 2</CENTER></TD</TR>
+			<TR><TD><CENTER>Giannis Antetokounmpo</CENTER></TD><TD><CENTER>Anteto34</CENTER></TD><TD><CENTER>58%</CENTER></TD></TR>
+			<TR><TD><CENTER>Kevin Durant</CENTER></TD><TD><CENTER>KD35</CENTER></TD><TD><CENTER>47%</CENTER></TD></TR>
+			<TR><TD><CENTER>Lebron James</CENTER></TD><TD><CENTER>KingJames</CENTER></TD><TD><CENTER>46%</CENTER></TD></TR>
+			<TR><TD><CENTER>Demar Derozan</CENTER></TD><TD><CENTER>DemarDero</CENTER></TD><TD><CENTER>44%</CENTER></TD></TR>
+			<TR><TD><CENTER>Lamelo Ball</CENTER></TD><TD><CENTER>Ball2</CENTER></TD><TD><CENTER>40%</CENTER></TD></TR>
+			<TR><TD><CENTER>Stephen Curry</CENTER></TD><TD><CENTER>SCurry30</CENTER></TD><TD><CENTER>33%</CENTER></TD></TR>
+			</TABLE>
+			</div>
+			
+			<div class="tabPanel"> <TABLE class="w3-table w3-center" style="border-collapse:separate;margin:10px;padding:10px" BORDER=1>
+			<TR class="w3-grey"><TD><CENTER>Nombre</CENTER></TD><TD><CENTER>Usuario</CENTER></TD><TD><CENTER>% Tiros de 3</CENTER></TD</TR>
+			<TR><TD><CENTER>Stephen Curry</CENTER></TD><TD><CENTER>SCurry30</CENTER></TD><TD><CENTER>48%</CENTER></TD></TR>
+			<TR><TD><CENTER>Lamelo Ball</CENTER></TD><TD><CENTER>Ball2</CENTER></TD><TD><CENTER>33%</CENTER></TD></TR>
+			<TR><TD><CENTER>Kevin Durant</CENTER></TD><TD><CENTER>KD35</CENTER></TD><TD><CENTER>32%</CENTER></TD></TR>
+			<TR><TD><CENTER>Demar Derozan</CENTER></TD><TD><CENTER>DemarDero</CENTER></TD><TD><CENTER>30%</CENTER></TD></TR>
+			<TR><TD><CENTER>Lebron James</CENTER></TD><TD><CENTER>KingJames</CENTER></TD><TD><CENTER>28%</CENTER></TD></TR>
+			<TR><TD><CENTER>Giannis Antetokounmpo</CENTER></TD><TD><CENTER>Anteto34</CENTER></TD><TD><CENTER>18%</CENTER></TD></TR>
+			</TABLE>
+			</div>
+			
+			<div class="tabPanel"> <TABLE class="w3-table w3-center" style="border-collapse:separate;margin:10px;padding:10px" BORDER=1>
+			<TR class="w3-grey"><TD><CENTER>Nombre</CENTER></TD><TD><CENTER>Usuario</CENTER></TD><TD><CENTER>Horas de entrenamiento</CENTER></TD</TR>
+			<TR><TD><CENTER>Lebron James</CENTER></TD><TD><CENTER>KingJames</CENTER></TD><TD><CENTER>400</CENTER></TD></TR>
+			<TR><TD><CENTER>Stephen Curry</CENTER></TD><TD><CENTER>SCurry30</CENTER></TD><TD><CENTER>380</CENTER></TD></TR>
+			<TR><TD><CENTER>Giannis Antetokounmpo</CENTER></TD><TD><CENTER>Anteto34</CENTER></TD><TD><CENTER>340</CENTER></TD></TR>
+			<TR><TD><CENTER>Kevin Durant</CENTER></TD><TD><CENTER>KD35</CENTER></TD><TD><CENTER>240</CENTER></TD></TR>
+			<TR><TD><CENTER>Demar Derozan</CENTER></TD><TD><CENTER>DemarDero</CENTER></TD><TD><CENTER>220</CENTER></TD></TR>
+			<TR><TD><CENTER>Lamelo Ball</CENTER></TD><TD><CENTER>Ball2</CENTER></TD><TD><CENTER>180</CENTER></TD></TR>
+			</TABLE>
+			</div>
+
+
+		<script src="myVehicles.js"></script>
+		</div></STRONG>
+	</div>
+	</div>
+	<br>
+	<br>
+</body>
+ <br>
+   <br>
+
+</html>

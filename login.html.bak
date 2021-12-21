@@ -1,0 +1,108 @@
+<html>
+<HEAD>
+	<link rel="stylesheet" href="w3.css">
+
+</HEAD>
+ <body>
+ <style> body {
+  background-image: url("images/Canasta.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+}
+</style>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+ <div style= "text-align:center; color: white "><H1><STRONG> WELCOME TO SHARP SHOOTERS!</STRONG><H1></div>
+ <div class="w3-center w3-hide-small w3-text-white col-xs-4" style= "text-align:center">
+ 
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		<br></br>
+		
+ 
+		 <h1><STRONG>LOG IN</STRONG></h1>
+		 
+		 <form id='formulario' action="Perfil.html">
+		 <p style="margin-left:325px" class="w3-center w3-hide-small" type="User:">
+		 <input class="w3-input w3-padding-16" style="width:320px; " type="text" placeholder="User" required="" name="User:">
+		 </p>
+		 <p style="margin-left:325px" type="Password:">
+		<input class="w3-input w3-padding-16" style="width:320px;" type="text" placeholder="Password" required="" name="Password:">
+		 </p>
+		<p>
+		<A href="">Have you forgotten your password?</A>
+		</p>
+		<p>
+		<A href="Register.html">Register</A>
+		</p>
+		<p>
+		<button class="w3-button w3-light-grey w3-section" type="submit">ENTER</button></p>
+		<SCRIPT SRC='action.js'></SCRIPT>
+		</form>
+	
+	
+	</div>
+	</body>
+   
+   <br>
+   <br>
+   
+   
+   <!-- <footer class="w3-container w3-padding-32 w3-black">  -->
+   <!-- <style type="text/css">a.nounderline:link{text-decoration:none;}</style> -->
+    <!-- <div class="w3-row-padding"> -->
+      <!-- <div class="w3-third"> -->
+        <!-- <h3>SPONSORS</h3> -->
+        <!-- <p>We make sure that the work done is of high quality. To achive this, we have different sponsors who provide us whit the necessary resources.</p>       -->
+      <!-- </div> -->
+    
+      <!-- <div class="w3-third"> -->
+	  
+        <!-- <h3> </h3> -->
+        <!-- <ul class="w3-ul"> -->
+          <!-- <a href="https://www.nike.com/" class="nounderline"> -->
+		  <!-- <li class="w3-padding-16 w3-hover-black" > -->
+            <!-- <img src="nikeblanco.png" class="w3-left w3-margin-right" style="width:50px"> -->
+            <!-- <span class="w3-large">Nike</span><br> -->
+            <!-- <span>Sport brand</span> -->
+          <!-- </li></a> -->
+          <!-- <a href="https://www.nba.com" class="nounderline"> -->
+		  <!-- <li class="w3-padding-16 w3-hover-black"> -->
+            <!-- <img src="NBA.png" class="w3-left w3-margin-right" style="width:50px"> -->
+            <!-- <span class="w3-large">NBA</span><br> -->
+            <!-- <span>USA's Professional Basketball League</span> -->
+          <!-- </li></a>  -->
+        <!-- </ul> -->
+      <!-- </div> -->
+
+      <!-- <div class="w3-third"> -->
+	  
+        <!-- <h3> </h3> -->
+        <!-- <ul class="w3-ul"> -->
+		  <!-- <a href="https://www.spalding.com" class="nounderline"> -->
+          <!-- <li class="w3-padding-16 w3-hover-black"> -->
+            <!-- <img src="spaldingblanco.png" class="w3-left w3-margin-right" style="width:50px"> -->
+            <!-- <span class="w3-large">Spalding</span><br> -->
+            <!-- <span>Basketball manufacturer</span> -->
+          <!-- </li></a> -->
+		  <!-- <a href="https://zerintia.com" class="nounderline"> -->
+          <!-- <li class="w3-padding-16 w3-hover-black"> -->
+            <!-- <img src="zerintia.png" class="w3-left w3-margin-right" style="width:50px"> -->
+            <!-- <span class="w3-large">Zerintia</span><br> -->
+            <!-- <span>Software company</span> -->
+          <!-- </li></a>  -->
+        <!-- </ul> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </footer> -->
+
+</html>

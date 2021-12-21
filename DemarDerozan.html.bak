@@ -1,0 +1,178 @@
+<html>
+<link rel="stylesheet" href="w3.css">
+<style>
+	body{
+		margin: 0;
+		width: 100%; 
+		max-width: 100%;
+		margin-right: auto;
+		margin-left: auto; 
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		position: center
+	}
+	
+	.logobar {
+		overflow: hidden;
+		background-color: rgba(3,5,30,255);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		display: inline
+	}
+
+	.logobar h2{
+		color: white;
+		position: center;
+		text-align: left;
+		padding-left: 5%;
+		font-size: 150%;
+	}
+
+	.logobar img{
+		padding-right: 1%;
+		width:5%;
+		height:5%;
+		padding-left: 70%;
+		margin: auto;
+	}
+
+	.navbar {
+	  overflow: hidden;
+	  background-color: rgba(3,5,30,255);
+	  position: fixed;
+	  bottom: 0;
+	  width: 100%;
+	  float: center;
+	}
+	.navbar li{
+		display: inline-block;
+	}
+
+	.navbar ul{
+		text-align: center;
+		width: 100%;
+		display: block
+	}
+
+	.navbar a {
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 100%;
+	}
+	
+	.navbar a:hover {
+	  background: #ddd;
+	  color: black;
+	}
+	
+	.main {
+	  padding: 16px;
+	  margin-bottom: 30px;
+	  height: 1500px; /* Used in this example to enable scrolling */
+	}
+	</style>
+	<body>
+		<div class="logobar">
+			<h2 >Sharp Shooters <img src="images/Logo.PNG">  </h2>
+		</div>
+		<div class="navbar">
+			<ul>
+				<li> <a href="#home"  >Entrenamiento</a> </li>
+				<li> <a href="entrenamientos.html" >Estadísticas</a> </li>
+				<li><a href="#contact" >Amigos</a> </li>
+				<li><a href="#contact" >Leaderboard</a> </li>
+				<li><a href="perfil.html" >Perfil</a> </li>
+			</ul>
+		  </div>
+	<div>
+		<br>
+		<br>
+		<br>
+		<div>
+			<H1 style= "text-align: center;"><STRONG><font size="7" >DEMAR DEROZAN</font></STRONG></H1>
+		<form action="">	
+				<fieldset class="w3-fieldset"  >
+				<legend style= "text-align:center"><STRONG><font size="4" >INFORMACIÓN DE USUARIO</font></STRONG></legend>
+				<div class="w3-container w3-padding-64 w3-right"  id="contact">
+				<br>
+				<p style="margin-right:100px">Nombre:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input NAME="nombre" placeholder="Demar Derozan" disabled ></p>
+				<p style="margin-right:100px">Edad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input NAME="edad" placeholder="29" disabled></p>
+				<p style="margin-right:100px">Altura:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input NAME="altura" placeholder="1,95 m" disabled></p>
+				<p style="margin-right:100px">Horas entrena: <input NAME="horas" placeholder="220" disabled></p>
+				<p style="margin-right:100px">Ciudad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input NAME="ciudad" placeholder="Chicago" disabled></p>
+				<p style="margin-right:100px">Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input NAME="usuario" placeholder="DemarDero" disabled></p>
+				
+			<script type="text/javascript">
+		function createButton(id) {
+			parentNode = document.getElementById(id);
+			buttonEl = document.createElement('input');
+			var textNode = document.createTextNode("");
+			buttonEl.appendChild(textNode);
+			parentNode.appendChild(buttonEl);
+		}
+			</script>
+			<center><input style="margin-right:100px" class="w3-button w3-light-grey w3-section" type="button" value="Escribir un comentario" onclick="createButton('buttonContent')"></center>
+			<div id='buttonContent'>
+			</div>
+				
+				<br></br>
+				<center><button style="margin-right:100px" class="w3-button w3-light-grey w3-section" onclick="mensaje()" type="submit">Enviar comentario</button></center>
+				</br></div>
+				<div class="w3-container w3-padding-64 w3-left" id="contact">
+				<img style="margin-left:10%; width: 100% " SRC='images/DemarDerozan2.png' >
+				</div>
+				</fieldset>
+			</div>
+			</form>
+				
+				
+				<div style= "text-align:center"><STRONG><font size="6" >RESUMEN DE ESTADÍSTICAS</font></STRONG></CENTER>
+				<BR></BR>
+				
+				<fieldset class="w3-fieldset"  >
+				<legend><STRONG><font size="4" >ZONAS CALIENTES/FRÍAS</font></STRONG></legend>
+				<br>
+				<div style= "text-align:center"><IMG style= "width: 90%; height: 90%" SRC='images/DemarDerozanZonas.png' ></CENTER>
+				</fieldset>
+				<br></br>
+				
+				<fieldset class="w3-fieldset"  >
+				<legend style= "text-align:center"><STRONG><font size="4" >DISTRIBUCIÓN DE TIROS</font></STRONG></legend>
+				<br>
+				<div style= "text-align:center"><IMG style= "width: 90%; height: 90%" SRC='images/DemarDerozanDistribucion.png' ></CENTER>
+				</fieldset>
+				<br></br>
+				
+				<div style= "text-align:center"><fieldset class="w3-fieldset"  >
+				<legend style= "text-align:center"><STRONG><font size="4" >ESTADÍSTICAS GENERALES</font></STRONG></legend>
+				<br>
+				<div class="tabContainer" >
+					<div class="buttonContainer">
+						<button  onclick="showPanel(0,'#fff')">TIROS LIBRES</button>
+						<button onclick="showPanel(1,'#fff')">TIROS DE 2</button>
+						<button onclick="showPanel(2,'#fff')">TIROS DE 3</button>
+					</div>
+					<br></br>
+					<div class="tabPanel"> <strong> Número de tiros: </strong> 850<br><br>% de acierto: 82%<br><br>
+					</div>
+					<div class="tabPanel"><strong> Número de tiros: </strong> 1800<br><br>% de acierto: 44%<br><br>
+					</div>
+					<div class="tabPanel"> <strong> Número de tiros: </strong> 200<br><br>% de acierto: 30%<br><br>
+					</div>
+				<script src="myVehicles.js"></script>
+				</div>
+				</fieldset></CENTER>
+				
+		<br></br>
+		<br></br>
+		
+			
+			<SCRIPT SRC="mensajenotifi.js"></SCRIPT>
+</div>
+</body>
+</html>
